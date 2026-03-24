@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    margin-top: 50px;
+    justify-items: center;
+}
+.boared{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.cell{
+    display: grid;
+
+    padding: 80px;
+    border: 1px solid black;
+}
