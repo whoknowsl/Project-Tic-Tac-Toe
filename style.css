@@ -3,9 +3,12 @@
     padding: 0;
 }
 body{
+    background-color: #14bdac;
     display: grid;
-    margin-top: 50px;
+    height: 100vh;
+    margin-top: 30px;
     justify-items: center;
+    gap: 10px;
 }
 .boared{
     display: grid;
@@ -13,8 +16,39 @@ body{
     grid-template-rows: repeat(3,1fr);
 }
 .cell{
+    font-size: 60px;
+    color: #545454;
     display: grid;
-
     padding: 80px;
-    border: 1px solid black;
+    border-right: 10px solid #0da192;
+  border-bottom: 10px solid #0da192;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
 }
+.cell:nth-child(3n) {
+  border-right: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+}
+#start{
+    font-size: larger;
+    padding:10px 50px;
+    height:40px;
+    border-radius: 6px;
+    background-color: #1f1f1f;
+    color: #9e9e9e;
+}
+.result-msg {
+  font-size: 24px;
+  color: #1f1f1f;
+  text-align: center;
+  background-color: #0da192;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+#
